@@ -56,7 +56,7 @@ heart.addEventListener('click', (e) =>{
     like.setAttribute("id", `${counter}`)
     like.innerHTML = `${counter} was liked 1 time`
     likes.appendChild(like)
-  } else if (like.id.value == `${counter}`) {
+  } else if (document.getElementById(`${counter}`).value == `${counter}`) {
     let like = document.getElementById(`${counter}`)
     like.innerHTML = `${counter} was liked ${e.detail} times`
     likes.appendChild(like)
