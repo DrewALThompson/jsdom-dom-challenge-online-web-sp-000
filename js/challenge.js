@@ -39,13 +39,17 @@ let heart = document.getElementById('heart');
 
 
 minus.addEventListener('click', () =>{
-  counter--;
-  counterId.innerHTML = counter;
+  if (pauseState === false){
+    counter--;
+    counterId.innerHTML = counter;
+  };
 });
 
 plus.addEventListener('click', () =>{
-  counter++;
-  counterId.innerHTML = counter;
+  if (pauseState === false) {
+    counter++;
+    counterId.innerHTML = counter;
+  }
 });
 
 pause.addEventListener('click', () =>{
