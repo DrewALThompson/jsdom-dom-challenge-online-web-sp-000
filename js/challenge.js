@@ -54,7 +54,6 @@ plus.addEventListener('click', () =>{
 
 heart.addEventListener('click', () =>{
   
-  } 
 });
 
 pause.addEventListener('click', () =>{
