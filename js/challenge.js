@@ -8,14 +8,10 @@ let pauseState = false;
 
 document.addEventListener("DOMContentLoaded", () => {
   
-  function increment() {
-    counterId.innerHTML = counter;
-    counter++;
-  }
-  
   setInterval(function(){
     if (pauseState === false){
-      increment;
+      counterId.innerHTML = counter;
+      counter++;;
     }  
   }
   , 1000);
