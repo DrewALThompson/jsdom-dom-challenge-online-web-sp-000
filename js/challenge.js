@@ -50,5 +50,7 @@ document.addEventListener('click', () =>{
     }
   } else if (heart.clicked === true ) {
     
+  } else {
+    console.log("clicked")
   }
 });
