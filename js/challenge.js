@@ -3,7 +3,7 @@ let input = document.getElementById('comment-input');
 let commentArea = document.getElementById('list');
 let counterId = document.getElementById('counter');
 let counter = 0;
-let paused = false;
+let pauseState = false;
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -47,5 +47,5 @@ plus.addEventListener('click', () =>{
 });
 
 pause.addEventListener('click', () =>{
-  paused = !paused;
+  pauseState = !pauseState;
 });
