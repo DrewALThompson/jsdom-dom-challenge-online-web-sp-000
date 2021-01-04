@@ -29,22 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+let minus = document.getElementById('minus');
+let plus = document.getElementById('plus');
+let pause = document.getElementById('pause');
+let heart = document.getElementById('heart');
 let paused = false;
 
-document.addEventListener('click', (event) =>{
-  if (event.currentTarget.id === 'minus'){
-    console.log("clicked")
-    counter--;
-    counterId.innerHTML = counter;
-  } else if (plus.clicked === true) {
-    counter++;
-    counterId.innerHTML = counter;
-  } else if (pause.clicked === true ) {
-    paused = !paused;
-    while (paused === true) {
-      
-    }
-  } else if (heart.clicked === true ) {
-    
-  }
+minus.addEventListener('click', () =>{
+  counter--;
+  counterId.innerHTML = counter;
 });
