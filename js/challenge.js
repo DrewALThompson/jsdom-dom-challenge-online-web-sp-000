@@ -1,7 +1,7 @@
 let form = document.querySelector('form');
 let input = document.getElementById('comment-input');
 let commentArea = documet.getElementById('list');
-let counter = document.getElementById('counter');
+let counterId = document.getElementById('counter');
 let counter = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
