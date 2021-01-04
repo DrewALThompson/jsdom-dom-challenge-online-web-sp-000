@@ -34,6 +34,7 @@ let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
 let pause = document.getElementById('pause');
 let heart = document.getElementById('heart');
+let paused = false;
 
 document.addEventListener('click', () =>{
   if ()
