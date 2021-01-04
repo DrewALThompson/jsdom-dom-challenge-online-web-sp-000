@@ -8,11 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
   let form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    
     let input = document.getElementById('comment-input');
     let commentArea = document.getElementById('list');
     let comment = document.createElement('p');
-    event.preventDefault();
     let inputValue = input.value;
+    
     if (inputValue != '') {
       comment.textContent
       input.value = '';
