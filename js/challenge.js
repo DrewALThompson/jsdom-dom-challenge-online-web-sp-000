@@ -37,6 +37,7 @@ let paused = false;
 
 document.addEventListener('click', () =>{
   if (minus.clicked === true){
+    console.log("clicked")
     counter--;
     counterId.innerHTML = counter;
   } else if (plus.clicked === true) {
