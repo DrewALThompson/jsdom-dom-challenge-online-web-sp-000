@@ -3,6 +3,7 @@ let input = document.getElementById('comment-input');
 let commentArea = documet.getElementById('list');
 let counterId = document.getElementById('counter');
 let counter = 0;
+let commentArea = document.getElementById('list');
 
 document.addEventListener("DOMContentLoaded", () => {
   
@@ -11,12 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     
     let input = document.getElementById('comment-input');
-    let commentArea = document.getElementById('list');
     let comment = document.createElement('p');
     let inputValue = input.value;
     
     if (inputValue !== '') {
-      comment.textContent = inputValue;
+      comment.innerHTML = inputValue;
       commentArea.append(comment);
       input.value = '';
     }
