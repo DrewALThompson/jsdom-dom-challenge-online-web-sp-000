@@ -2,6 +2,7 @@ let form = document.querySelector('form');
 let input = document.getElementById('comment-input');
 let commentArea = document.getElementById('list');
 let counterId = document.getElementById('counter');
+let likes = document.querySelector('ul');
 let counter = 0;
 let pauseState = false;
 
