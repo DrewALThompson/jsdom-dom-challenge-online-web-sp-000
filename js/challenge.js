@@ -36,6 +36,7 @@ let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
 let pause = document.getElementById('pause');
 let heart = document.getElementById('heart');
+let submit = document.getElementById('submit')
 
 
 minus.addEventListener('click', () =>{
@@ -63,13 +64,13 @@ pause.addEventListener('click', () =>{
     plus.disabled = false;
     minus.disabled = false;
     heart.disabled = false;
-    form.disabled = false;
+    submit.disabled = false;
     
   } else if (pauseState === true) {
     pause.textContent = 'resume';
     plus.disabled = true;
     minus.disabled = true;
     heart.disabled = true;
-    form.disabled = true;
+    submit.disabled = true;
   }
 });
