@@ -3,7 +3,6 @@ let input = document.getElementById('comment-input');
 let commentArea = documet.getElementById('list');
 let counterId = document.getElementById('counter');
 let counter = 0;
-let commentArea = document.getElementById('list');
 
 document.addEventListener("DOMContentLoaded", () => {
   
