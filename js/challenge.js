@@ -51,9 +51,10 @@ plus.addEventListener('click', () =>{
 });
 
 heart.addEventListener('click', (e) =>{
-  let click = `${e.detail}`
+  let click = 0
+  click++
   let like = document.createElement('li');
-  let msg = `${counter} was clicked ${e.detail} times`;
+  let msg = `${counter} was clicked ${click} times`;
   like.innerHTML = msg;
   if (e.detail > 1){
     like.replaceWith = msg;
