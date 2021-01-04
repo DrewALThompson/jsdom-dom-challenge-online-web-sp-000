@@ -9,10 +9,8 @@ let paused = false;
 document.addEventListener("DOMContentLoaded", () => {
   
   function increment() {
-    while(paused === false){
-      counterId.innerHTML = counter;
-      counter++;
-    }
+    counterId.innerHTML = counter;
+    counter++;
   }
   setInterval(increment, 1000);
   
