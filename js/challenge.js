@@ -8,11 +8,11 @@ let counterId = document.getElementById('counter');
 document.addEventListener("DOMContentLoaded", () => {
   
   let counter = 0;
-  function increment() {
-    counterId.innerHTML = counter;
-    counter++
-  }
-  setInterval(increment, 1000);
+  // function increment() {
+  //   counterId.innerHTML = counter;
+  //   counter++
+  // }
+  // setInterval(increment, 1000);
   
   let form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
