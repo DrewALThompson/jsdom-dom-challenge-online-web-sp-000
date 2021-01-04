@@ -6,6 +6,12 @@ let counter = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
   
+  function increment() {
+    counterId.innerHTML = counter;
+    counter++
+  }
+  setInterval
+  
   let form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
     event.preventDefault();
