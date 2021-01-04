@@ -3,6 +3,8 @@ let input = document.getElementById('comment-input');
 let commentArea = document.getElementById('list');
 let counterId = document.getElementById('counter');
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
   
   let counter = 0;
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
+let 
 
 document.addEventListener('click', () =>{
   
