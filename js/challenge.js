@@ -51,14 +51,14 @@ plus.addEventListener('click', () =>{
 });
 
 heart.addEventListener('click', (e) =>{
-  if(document.getElementById(`li${counter}`) == null){
+  if(document.getElementById(`${counter}`) == null){
     let like = document.createElement("li");
-    like.setAttribute("id", `li${counter}`)
+    like.setAttribute("id", `${counter}`)
     like.innerHTML = `${counter} was liked 1 time`
     likes.appendChild(like)
   }
   else {
-    let like = document.getElementById(`li${counter}`)
+    let like = document.getElementById(`${counter}`)
     like.innerHTML = `${counter} was liked ${e.detail} times`
     likes.appendChild(like)
   }
