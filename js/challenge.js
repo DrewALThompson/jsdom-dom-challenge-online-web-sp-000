@@ -51,9 +51,10 @@ plus.addEventListener('click', () =>{
 });
 
 heart.addEventListener('click', () =>{
-  if(document.getElementById(`li${counter}`) == null){
+  let click = 0;
+  if(document.getElementById(`li${counter}`) === null){
     let like = document.createElement("li");
-    let click = 0;
+    click = 0;
     click++
     like.setAttribute("id", `li${counter}`)
     like.innerHTML = `${counter} was liked ${click} time`
