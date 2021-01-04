@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let comment = document.createElement('p');
     let inputValue = input.value;
     
-    if (inputValue != '') {
-      comment.textContent
+    if (inputValue !== '') {
+      comment.textContent = inputValue;
+      commentArea.append(comment);
       input.value = '';
-    };
-  })
+    }
+  });
 });
