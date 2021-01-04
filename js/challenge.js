@@ -29,14 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let minus = document.getElementById('minus');
-let plus = document.getElementById('plus');
-let pause = document.getElementById('pause');
-let heart = document.getElementById('heart');
 let paused = false;
 
 document.addEventListener('click', (event) =>{
-  if (minus.clicked === true){
+  if (event.currentTarget.id === 'minus'){
     console.log("clicked")
     counter--;
     counterId.innerHTML = counter;
