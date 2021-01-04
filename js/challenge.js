@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
 let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
 let pause = document.getElementById('pause');
-let like = document.getElementById('like');
+let heart = document.getElementById('heart');
 
 document.addEventListener('click', () =>{
-  
+  if ()
 });
