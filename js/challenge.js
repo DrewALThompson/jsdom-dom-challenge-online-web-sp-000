@@ -50,7 +50,7 @@ plus.addEventListener('click', () =>{
     counterId.innerHTML = counter;
 });
 
-heart.addEventListener('click', (e) =>{
+heart.addEventListener('click', () =>{
   if(document.getElementById(`li${counter}`) == null){
     let like = document.createElement("li");
     like.setAttribute("id", `li${counter}`)
@@ -60,7 +60,7 @@ heart.addEventListener('click', (e) =>{
   else {
     let like = document.getElementById(`li${counter}`)
     like.innerHTML = `${counter} was liked ${e.detail} times`
-    like.appendChild(li)
+    likes.appendChild(like)
   }
 });
 
