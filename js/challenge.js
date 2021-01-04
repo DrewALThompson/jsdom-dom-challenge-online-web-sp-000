@@ -37,5 +37,13 @@ let heart = document.getElementById('heart');
 let paused = false;
 
 document.addEventListener('click', () =>{
-  if ()
+  if (minus.clicked === true){
+    
+  } else if (plus.clicked === true) {
+    
+  } else if (pause.clicked === true ) {
+    
+  } else if (heart.clicked === true ) {
+    
+  }
 });
