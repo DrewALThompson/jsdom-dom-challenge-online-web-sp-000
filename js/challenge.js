@@ -52,16 +52,7 @@ plus.addEventListener('click', () =>{
 
 heart.addEventListener('click', (e) =>{
   let like = document.createElement('li');
-  if (e.detail == 1) {
-    like.innerHTML = `${counter} was clicked 1 time`;
-    likes.append(like)
-  } else if (e.detail > 1){
-    likes.append(like)
-    like.textContent = `${counter} was clicked ${e.detail} times`;
-    like.replaceWith
-  } else {
-    likes.append(like);
-  }
+  
 });
 
 pause.addEventListener('click', () =>{
