@@ -9,11 +9,11 @@ let pauseState = false;
 document.addEventListener("DOMContentLoaded", () => {
   
   function increment() {
-    while(pauseState === false){
-      counterId.innerHTML = counter;
-      counter++;
+    counterId.innerHTML = counter;
+    counter++;
     }
   }
+  
   setInterval(increment, 1000);
   
   let form = document.querySelector('form');
