@@ -53,10 +53,10 @@ plus.addEventListener('click', () =>{
 heart.addEventListener('click', (e) =>{
   let like = document.createElement('li');
   let msg = `${counter} was clicked ${e.detail} times`;
-  like.innerHTML = msg
+  like.innerHTML = msg;
   if (e.detail > 1){
-    like.replaceWith(msg)
-  } else 
+    like.replaceWith(msg);
+  } else {
     likes.append(like);
   }
 });
