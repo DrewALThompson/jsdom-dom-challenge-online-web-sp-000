@@ -55,7 +55,7 @@ heart.addEventListener('click', (e) =>{
   let msg = `${counter} was clicked ${e.detail} times`;
   like.innerHTML = msg;
   if (e.detail > 1){
-    like.replaceWith(msg);
+    like.innerHTML = msg;
   } else {
     likes.append(like);
   }
