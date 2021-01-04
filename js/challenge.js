@@ -52,12 +52,13 @@ plus.addEventListener('click', () =>{
 
 heart.addEventListener('click', (e) =>{
   let like = document.createElement('li');
-  like.innerHTML = msg
   let msg = `${counter} was clicked ${e.detail} times`;
+  like.innerHTML = msg
   if (e.detail > 1){
-    like.replacewith
+    like.replaceWith(msg)
+  } else 
+    likes.append(like);
   }
-  likes.append(like);
 });
 
 pause.addEventListener('click', () =>{
