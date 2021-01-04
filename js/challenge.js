@@ -50,8 +50,8 @@ plus.addEventListener('click', () =>{
     counterId.innerHTML = counter;
 });
 
-heart.addEventListener('click', () =>{
-  if(document.getElementById(`li${counter}`) === null){
+heart.addEventListener('click', (e) =>{
+  if(document.getElementById(`li${counter}`) == null){
     let like = document.createElement("li");
     like.setAttribute("id", `li${counter}`)
     like.innerHTML = `${counter} was liked 1 time`
