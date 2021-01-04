@@ -42,7 +42,9 @@ minus.addEventListener('click', () =>{
   if (pauseState === false){
     counter--;
     counterId.innerHTML = counter;
-  };
+  } else if (pauseState === true) {
+    
+  }
 });
 
 plus.addEventListener('click', () =>{
