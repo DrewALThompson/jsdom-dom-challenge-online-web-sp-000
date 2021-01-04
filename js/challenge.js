@@ -42,7 +42,7 @@ minus.addEventListener('click', () =>{
 });
 
 plus.addEventListener('click', () =>{
-  counter--;
+  counter++;
   counterId.innerHTML = counter;
 });
 
