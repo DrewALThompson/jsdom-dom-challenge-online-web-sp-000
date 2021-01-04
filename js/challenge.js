@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     counterId.innerHTML = counter;
     counter++
   }
-  setInterval
+  setInterval(increment, 1000);
   
   let form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
