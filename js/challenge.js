@@ -39,3 +39,13 @@ minus.addEventListener('click', () =>{
   counter--;
   counterId.innerHTML = counter;
 });
+
+plus.addEventListener('click', () =>{
+  counter--;
+  counterId.innerHTML = counter;
+});
+
+pause.addEventListener('click', () =>{
+  paused = !paused;
+  console.log(paused);
+});
