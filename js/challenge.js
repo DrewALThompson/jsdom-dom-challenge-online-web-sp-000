@@ -52,10 +52,8 @@ plus.addEventListener('click', () =>{
 
 heart.addEventListener('click', (e) =>{
   let like = document.createElement('li');
-  if (counter === counterId.innerHTML){
-   like.innerHTML = `${counterId.value} was clicked ${e.detail} times`;
-    likes.append(like);
-  }
+  likes.append(like);
+  like.innerHTML = `${counterId.value} was clicked ${e.detail} times`;
 });
 
 pause.addEventListener('click', () =>{
