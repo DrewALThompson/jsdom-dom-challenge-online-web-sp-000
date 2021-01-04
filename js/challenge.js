@@ -3,15 +3,14 @@ let input = document.getElementById('comment-input');
 let commentArea = document.getElementById('list');
 let counterId = document.getElementById('counter');
 let counter = 0;
+let paused = false;
 
 
 document.addEventListener("DOMContentLoaded", () => {
   
   function increment() {
-    while (paused === false){
     counterId.innerHTML = counter;
     counter++;
-    }
   }
   setInterval(increment, 1000);
   
@@ -35,7 +34,7 @@ let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
 let pause = document.getElementById('pause');
 let heart = document.getElementById('heart');
-let paused = false;
+
 
 minus.addEventListener('click', () =>{
   counter--;
