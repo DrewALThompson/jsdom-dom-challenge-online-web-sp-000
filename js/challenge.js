@@ -40,17 +40,13 @@ let submit = document.getElementById('submit')
 
 
 minus.addEventListener('click', () =>{
-  if (pauseState === false){
     counter--;
     counterId.innerHTML = counter;
-  } 
 });
 
 plus.addEventListener('click', () =>{
-  if (pauseState === false) {
     counter++;
     counterId.innerHTML = counter;
-  } 
 });
 
 heart.addEventListener('click', () =>{
