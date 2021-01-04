@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     counter++;
     }
   }
-  
-  setInterval(increment, 1000);
+  if (pauseState === false)
+    setInterval(increment, 1000);
   
   let form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
