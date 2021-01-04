@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let 
+let minus = document.getElementById('minus');
+let minus = document.getElementById('minus')
 
 document.addEventListener('click', () =>{
   
