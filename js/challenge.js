@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let minus = document.getElementById('minus');
-let minus = document.getElementById('minus')
+let plus = document.getElementById('plus');
+let pause = document.getElementById('pause');
+let like = document.getElementById('like');
 
 document.addEventListener('click', () =>{
   
