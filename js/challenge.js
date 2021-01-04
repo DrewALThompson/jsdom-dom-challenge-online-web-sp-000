@@ -54,6 +54,17 @@ heart.addEventListener('click', (e) =>{
   // let like = document.createElement(`li#${counter}`);
   // likes.append(like);
   // like.innerHTML = `${counter} was clicked ${e.detail} times`;
+  j++;
+  v = document.createElement("li");
+  var node = document.createTextNode(i + " has been liked " + j + " time(s).")
+  var likes = document.querySelector('.likes')
+  var lastLike = document.querySelector('.likes').lastChild
+  li.appendChild(node);
+  if(j>1){
+   lastLike.replaceWith(li)
+  } else {
+    likes.appendChild(li);
+  }
 });
 
 pause.addEventListener('click', () =>{
