@@ -8,7 +8,7 @@ let counter = 0;
 document.addEventListener("DOMContentLoaded", () => {
   
   function increment() {
-    while (paused === true){
+    while (paused === false){
     counterId.innerHTML = counter;
     counter++;
     }
