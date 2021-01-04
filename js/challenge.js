@@ -8,8 +8,10 @@ let counter = 0;
 document.addEventListener("DOMContentLoaded", () => {
   
   function increment() {
+    while (paused === true){
     counterId.innerHTML = counter;
-    counter++
+    counter++;
+    }
   }
   setInterval(increment, 1000);
   
@@ -47,5 +49,4 @@ plus.addEventListener('click', () =>{
 
 pause.addEventListener('click', () =>{
   paused = !paused;
-  console.log(paused);
 });
