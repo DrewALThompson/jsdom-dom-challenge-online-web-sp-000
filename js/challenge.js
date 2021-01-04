@@ -56,7 +56,11 @@ pause.addEventListener('click', () =>{
   pauseState = !pauseState;
   if (pauseState === false){
     pause.textContent = 'pause';
+    plus.disabled = false;
+    minus.disabled = false;
   } else if (pauseState === true) {
     pause.textContent = 'resume';
+    plus.disabled = true;
+    minus.disabled = true;
   }
 });
