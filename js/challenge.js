@@ -38,11 +38,14 @@ let paused = false;
 
 document.addEventListener('click', () =>{
   if (minus.clicked === true){
-    
+    counterId.value = counterId.value--;
   } else if (plus.clicked === true) {
-    
+    counterId.value = counterId.value++;
   } else if (pause.clicked === true ) {
-    
+    paused = !paused;
+    while (paused === true) {
+      
+    }
   } else if (heart.clicked === true ) {
     
   }
