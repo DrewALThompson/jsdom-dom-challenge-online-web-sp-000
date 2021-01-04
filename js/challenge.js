@@ -35,7 +35,7 @@ let pause = document.getElementById('pause');
 let heart = document.getElementById('heart');
 let paused = false;
 
-document.addEventListener('click', () =>{
+document.addEventListener('click', (event) =>{
   if (minus.clicked === true){
     console.log("clicked")
     counter--;
