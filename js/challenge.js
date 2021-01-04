@@ -43,7 +43,7 @@ minus.addEventListener('click', () =>{
     counter--;
     counterId.innerHTML = counter;
   } else if (pauseState === true) {
-    
+    alert('Buttons Cannot be pressed during Pause');
   }
 });
 
@@ -51,6 +51,8 @@ plus.addEventListener('click', () =>{
   if (pauseState === false) {
     counter++;
     counterId.innerHTML = counter;
+  } else if (pauseState === true) {
+    alert('Buttons Cannot be pressed during Pause');
   }
 });
 
