@@ -50,4 +50,8 @@ plus.addEventListener('click', () =>{
 
 pause.addEventListener('click', () =>{
   pauseState = !pauseState;
+  if (pauseState === false){
+    pause.textContent = 'pause';
+    plus
+  }
 });
