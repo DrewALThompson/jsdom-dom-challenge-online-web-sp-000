@@ -51,9 +51,17 @@ plus.addEventListener('click', () =>{
 });
 
 heart.addEventListener('click', (e) =>{
-  let like = document.createElement('li');
-  like.textContent = `Click count: ${event.detail}`;
-  likes.append(like)
+  if(document.getElementById(`li${counter}`) == null){
+    let like = document.createElement("li");
+    like.setAttribute("id", `li${counter}`)
+    like.innerHTML = `${counter} was liked 1 time`
+    likes.appendChild(like)
+  }
+  else {
+    let like = document.getElementById(`li${counter}`)
+    like.innerHTML = `${counter} was liked ${e.detail} times`
+    like.appendChild(li)
+  }
 });
 
 pause.addEventListener('click', () =>{
