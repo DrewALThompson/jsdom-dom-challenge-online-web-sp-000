@@ -52,7 +52,8 @@ plus.addEventListener('click', () =>{
 
 heart.addEventListener('click', (e) =>{
   let like = document.createElement('li');
-  
+  like.textContent = `Click count: ${event.detail}`;
+  likes.append(like)
 });
 
 pause.addEventListener('click', () =>{
