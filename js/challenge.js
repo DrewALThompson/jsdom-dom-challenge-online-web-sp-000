@@ -37,7 +37,8 @@ let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
 let pause = document.getElementById('pause');
 let heart = document.getElementById('heart');
-let submit = document.getElementById('submit')
+let submit = document.getElementById('submit');
+let like = document.createElement('li');
 
 
 minus.addEventListener('click', () =>{
@@ -51,7 +52,8 @@ plus.addEventListener('click', () =>{
 });
 
 heart.addEventListener('click', () =>{
-  
+  like.innerHTML = ``;
+  likes.append(like);
 });
 
 pause.addEventListener('click', () =>{
